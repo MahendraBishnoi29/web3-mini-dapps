@@ -25,3 +25,10 @@ async function main() {
     deployedCryptoDevsContract.address
   );
 }
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.log(error.message);
+    process.exit(1);
+  });
